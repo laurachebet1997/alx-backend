@@ -2,7 +2,6 @@
 """Least Frequently Used caching module.
 """
 from collections import OrderedDict
-
 from base_caching import BaseCaching
 
 
