@@ -2,6 +2,7 @@
 """Least Frequently Used caching module.
 """
 from collections import OrderedDict
+
 from base_caching import BaseCaching
 
 
@@ -42,7 +43,7 @@ class LFUCache(BaseCaching):
         self.keys_freq.pop(mru_pos)
         self.keys_freq.insert(ins_pos, [mru_key, mru_freq])
 
-         def put(self, key, item):
+    def put(self, key, item):
         """Adds an item in the cache.
         """
         if key is None or item is None:
